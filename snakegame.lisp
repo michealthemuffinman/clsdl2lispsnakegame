@@ -1,17 +1,9 @@
-;;; snakeatt.lisp
+;;; snakegame.lisp
 ;;; A simple Snake game implemented in Common Lisp using SDL2
 
 (require :sdl2)
 
 ;; Utility Functions
-
-(defun clamp (value min max)
-  "Clamp the value to be between min and max."
-  (max min (min value max)))
-
-(defun random-color ()
-  "Generate a random color in the form of (R G B)."
-  (list (random 256) (random 256) (random 256)))
 
 (defun draw-rect (renderer x y width height color)
   "Draw a rectangle with the specified color."
